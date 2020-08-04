@@ -12,7 +12,8 @@ import UIKit
 class BreakViewController: UIViewController {
 
     @IBOutlet var cactusImageView: UIImageView!
-    @IBOutlet var takeABreakbutton: UIView!
+    
+    @IBOutlet var takeABreakbutton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

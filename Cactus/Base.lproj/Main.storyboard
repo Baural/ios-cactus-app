@@ -200,6 +200,7 @@
                     <navigationItem key="navigationItem" id="si4-Wi-h9T"/>
                     <connections>
                         <outlet property="cactusImageView" destination="Avp-r9-JAI" id="qLI-Sv-5fP"/>
+                        <outlet property="takeABreakbutton" destination="glt-tx-hcW" id="cnm-5a-aqc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="98E-Vz-ODb" sceneMemberID="firstResponder"/>
