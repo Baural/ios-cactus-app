@@ -177,6 +177,9 @@
                                 <state key="normal" title="×">
                                     <color key="titleColor" name="textColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didCloseButton" destination="D29-hr-oqP" eventType="touchUpInside" id="b2L-hQ-nsH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You've planted a cactus!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBQ-xU-6Rb">
                                 <rect key="frame" x="139" y="20" width="138" height="15"/>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9888A5724D939DB0055C275 /* Break.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9888A5624D939DB0055C275 /* Break.swift */; };
+		D9888A5924D93A010055C275 /* BreakManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9888A5824D93A010055C275 /* BreakManager.swift */; };
 		D9C1B59624D0961600E461E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C1B59524D0961600E461E0 /* AppDelegate.swift */; };
 		D9C1B59A24D0961600E461E0 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C1B59924D0961600E461E0 /* SessionViewController.swift */; };
 		D9C1B59D24D0961600E461E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C1B59B24D0961600E461E0 /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D9888A5624D939DB0055C275 /* Break.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Break.swift; sourceTree = "<group>"; };
+		D9888A5824D93A010055C275 /* BreakManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakManager.swift; sourceTree = "<group>"; };
 		D9C1B59224D0961600E461E0 /* Cactus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cactus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9C1B59524D0961600E461E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9C1B59924D0961600E461E0 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +52,7 @@
 		D94C434124D90A5A0060FE43 /* Break */ = {
 			isa = PBXGroup;
 			children = (
+				D9888A5524D939630055C275 /* Model */,
 				D94C434224D90A730060FE43 /* Controller */,
 			);
 			path = Break;
@@ -59,6 +64,15 @@
 				D9CBB84A24D11C2900090837 /* BreakViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		D9888A5524D939630055C275 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D9888A5624D939DB0055C275 /* Break.swift */,
+				D9888A5824D93A010055C275 /* BreakManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D9C1B58924D0961600E461E0 = {
@@ -193,7 +207,9 @@
 				D9C1B59A24D0961600E461E0 /* SessionViewController.swift in Sources */,
 				D9C1B59624D0961600E461E0 /* AppDelegate.swift in Sources */,
 				D9CBB85524D1E6E900090837 /* Session.swift in Sources */,
+				D9888A5724D939DB0055C275 /* Break.swift in Sources */,
 				D9CBB85724D1E9EA00090837 /* CountdownTimer.swift in Sources */,
+				D9888A5924D93A010055C275 /* BreakManager.swift in Sources */,
 				D9CBB84B24D11C2900090837 /* BreakViewController.swift in Sources */,
 				D9CBB85324D1E6C400090837 /* SessionManager.swift in Sources */,
 				D9CBB84D24D1A0E100090837 /* OnboardingViewController.swift in Sources */,
