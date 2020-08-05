@@ -37,12 +37,14 @@ class SessionViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     }
     
     @IBAction func didTapPlantButton() {
-         let selectedPickerRow = pickerView.selectedRow(inComponent: 0)
-               let selectedDuration = durations[selectedPickerRow]
-               
-               // не превращаем минуты в секунды, чтобы было проще тестировать
-               let session = Session(durationInSeconds: selectedDuration)
-               sessionManager.startSession(session: session)
+        let selectedPickerRow = pickerView.selectedRow(inComponent: 0)
+         let selectedDuration = durations[selectedPickerRow]
+         
+         // не превращаем минуты в секунды, чтобы было проще тестировать
+         let session = Session(durationInSeconds: selectedDuration,
+                               startDate: Date(),
+                               cactus: CactusesStorage.shared.selectedCactus)
+         sessionManager.startSession(session: session)
     }
     
     @IBAction func didTapCancelButton(_ sender: Any) {

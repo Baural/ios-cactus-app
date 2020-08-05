@@ -159,7 +159,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cactus_1" translatesAutoresizingMaskIntoConstraints="NO" id="Avp-r9-JAI">
-                                <rect key="frame" x="101" y="191" width="213" height="213"/>
+                                <rect key="frame" x="101" y="131" width="213" height="213"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
@@ -195,20 +195,56 @@
                                 <state key="normal" title="Take a break">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapTakeABreakButton" destination="D29-hr-oqP" eventType="touchUpInside" id="Ucs-1d-Li2"/>
+                                </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dpJ-LD-ezr">
+                                <rect key="frame" x="0.0" y="352" width="414" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gff-Bx-B3F">
+                                <rect key="frame" x="37" y="560" width="343" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Finish Break">
+                                    <color key="titleColor" name="textColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapFinishBreakButton" destination="D29-hr-oqP" eventType="touchUpInside" id="fDR-ze-NJS"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You break will end in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byF-Lp-Ixh">
+                                <rect key="frame" x="129" y="411" width="156" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="secondTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5:37" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epg-LY-gDl">
+                                <rect key="frame" x="123" y="440" width="171" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" name="primaryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="VZY-Cl-dVH"/>
                     </view>
                     <navigationItem key="navigationItem" id="si4-Wi-h9T"/>
                     <connections>
+                        <outlet property="breakMessageLabel" destination="byF-Lp-Ixh" id="bLl-4E-C3G"/>
                         <outlet property="cactusImageView" destination="Avp-r9-JAI" id="qLI-Sv-5fP"/>
+                        <outlet property="countdownLabel" destination="epg-LY-gDl" id="gYL-jB-W71"/>
+                        <outlet property="finishBreakButton" destination="Gff-Bx-B3F" id="UIy-XR-tSu"/>
+                        <outlet property="pickerView" destination="dpJ-LD-ezr" id="0H1-i3-fe3"/>
                         <outlet property="takeABreakbutton" destination="glt-tx-hcW" id="cnm-5a-aqc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="98E-Vz-ODb" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="129"/>
+            <point key="canvasLocation" x="1055.072463768116" y="128.57142857142856"/>
         </scene>
     </scenes>
     <resources>

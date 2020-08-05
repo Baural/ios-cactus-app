@@ -19,6 +19,8 @@
 		D9CBB85324D1E6C400090837 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBB85224D1E6C400090837 /* SessionManager.swift */; };
 		D9CBB85524D1E6E900090837 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBB85424D1E6E900090837 /* Session.swift */; };
 		D9CBB85724D1E9EA00090837 /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBB85624D1E9EA00090837 /* CountdownTimer.swift */; };
+		D9D6202624DA56BC002A8F48 /* Cactus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D6202524DA56BC002A8F48 /* Cactus.swift */; };
+		D9D6202824DA578E002A8F48 /* CactusesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D6202724DA578E002A8F48 /* CactusesStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		D9CBB85224D1E6C400090837 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		D9CBB85424D1E6E900090837 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		D9CBB85624D1E9EA00090837 /* CountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
+		D9D6202524DA56BC002A8F48 /* Cactus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cactus.swift; sourceTree = "<group>"; };
+		D9D6202724DA578E002A8F48 /* CactusesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CactusesStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		D9C1B59424D0961600E461E0 /* Cactus */ = {
 			isa = PBXGroup;
 			children = (
+				D9D6202324DA5688002A8F48 /* CactusShop */,
 				D94C434124D90A5A0060FE43 /* Break */,
 				D9CBB85124D1E68300090837 /* Session */,
 				D9C1B59524D0961600E461E0 /* AppDelegate.swift */,
@@ -131,6 +136,23 @@
 				D9CBB84F24D1E65500090837 /* Model */,
 			);
 			path = Session;
+			sourceTree = "<group>";
+		};
+		D9D6202324DA5688002A8F48 /* CactusShop */ = {
+			isa = PBXGroup;
+			children = (
+				D9D6202424DA56A7002A8F48 /* Model */,
+			);
+			path = CactusShop;
+			sourceTree = "<group>";
+		};
+		D9D6202424DA56A7002A8F48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D9D6202524DA56BC002A8F48 /* Cactus.swift */,
+				D9D6202724DA578E002A8F48 /* CactusesStorage.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,7 +231,9 @@
 				D9CBB85524D1E6E900090837 /* Session.swift in Sources */,
 				D9888A5724D939DB0055C275 /* Break.swift in Sources */,
 				D9CBB85724D1E9EA00090837 /* CountdownTimer.swift in Sources */,
+				D9D6202824DA578E002A8F48 /* CactusesStorage.swift in Sources */,
 				D9888A5924D93A010055C275 /* BreakManager.swift in Sources */,
+				D9D6202624DA56BC002A8F48 /* Cactus.swift in Sources */,
 				D9CBB84B24D11C2900090837 /* BreakViewController.swift in Sources */,
 				D9CBB85324D1E6C400090837 /* SessionManager.swift in Sources */,
 				D9CBB84D24D1A0E100090837 /* OnboardingViewController.swift in Sources */,
