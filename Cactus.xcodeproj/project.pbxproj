@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D91B9A3424DFCB0100FE8BD0 /* SessionsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B9A3324DFCB0100FE8BD0 /* SessionsListTableViewCell.swift */; };
+		D91C18CB24DF3142009C5167 /* CactusTapBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91C18CA24DF3142009C5167 /* CactusTapBarController.swift */; };
+		D91C18CE24DF34D7009C5167 /* SessionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91C18CD24DF34D7009C5167 /* SessionsListViewController.swift */; };
+		D91C18D024DF3617009C5167 /* SessionsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91C18CF24DF3617009C5167 /* SessionsStorage.swift */; };
 		D9888A5724D939DB0055C275 /* Break.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9888A5624D939DB0055C275 /* Break.swift */; };
 		D9888A5924D93A010055C275 /* BreakManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9888A5824D93A010055C275 /* BreakManager.swift */; };
 		D9C1B59624D0961600E461E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C1B59524D0961600E461E0 /* AppDelegate.swift */; };
@@ -24,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D91B9A3324DFCB0100FE8BD0 /* SessionsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsListTableViewCell.swift; sourceTree = "<group>"; };
+		D91C18CA24DF3142009C5167 /* CactusTapBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CactusTapBarController.swift; sourceTree = "<group>"; };
+		D91C18CD24DF34D7009C5167 /* SessionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsListViewController.swift; sourceTree = "<group>"; };
+		D91C18CF24DF3617009C5167 /* SessionsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsStorage.swift; sourceTree = "<group>"; };
 		D9888A5624D939DB0055C275 /* Break.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Break.swift; sourceTree = "<group>"; };
 		D9888A5824D93A010055C275 /* BreakManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakManager.swift; sourceTree = "<group>"; };
 		D9C1B59224D0961600E461E0 /* Cactus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cactus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +61,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D91B9A3024DFC18C00FE8BD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D91B9A3324DFCB0100FE8BD0 /* SessionsListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D91B9A3524DFD02200FE8BD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D91C18CD24DF34D7009C5167 /* SessionsListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D91C18C924DF30D3009C5167 /* TapBar */ = {
+			isa = PBXGroup;
+			children = (
+				D91C18CA24DF3142009C5167 /* CactusTapBarController.swift */,
+			);
+			path = TapBar;
+			sourceTree = "<group>";
+		};
+		D91C18CC24DF349E009C5167 /* SessionsList */ = {
+			isa = PBXGroup;
+			children = (
+				D91B9A3524DFD02200FE8BD0 /* Controller */,
+				D91B9A3024DFC18C00FE8BD0 /* View */,
+				D91C18D124DF364C009C5167 /* Model */,
+			);
+			path = SessionsList;
+			sourceTree = "<group>";
+		};
+		D91C18D124DF364C009C5167 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D91C18CF24DF3617009C5167 /* SessionsStorage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D94C434124D90A5A0060FE43 /* Break */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +148,8 @@
 		D9C1B59424D0961600E461E0 /* Cactus */ = {
 			isa = PBXGroup;
 			children = (
+				D91C18CC24DF349E009C5167 /* SessionsList */,
+				D91C18C924DF30D3009C5167 /* TapBar */,
 				D9D6202324DA5688002A8F48 /* CactusShop */,
 				D94C434124D90A5A0060FE43 /* Break */,
 				D9CBB85124D1E68300090837 /* Session */,
@@ -226,14 +278,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91C18CE24DF34D7009C5167 /* SessionsListViewController.swift in Sources */,
 				D9C1B59A24D0961600E461E0 /* SessionViewController.swift in Sources */,
+				D91C18D024DF3617009C5167 /* SessionsStorage.swift in Sources */,
 				D9C1B59624D0961600E461E0 /* AppDelegate.swift in Sources */,
 				D9CBB85524D1E6E900090837 /* Session.swift in Sources */,
 				D9888A5724D939DB0055C275 /* Break.swift in Sources */,
 				D9CBB85724D1E9EA00090837 /* CountdownTimer.swift in Sources */,
 				D9D6202824DA578E002A8F48 /* CactusesStorage.swift in Sources */,
+				D91B9A3424DFCB0100FE8BD0 /* SessionsListTableViewCell.swift in Sources */,
 				D9888A5924D93A010055C275 /* BreakManager.swift in Sources */,
 				D9D6202624DA56BC002A8F48 /* Cactus.swift in Sources */,
+				D91C18CB24DF3142009C5167 /* CactusTapBarController.swift in Sources */,
 				D9CBB84B24D11C2900090837 /* BreakViewController.swift in Sources */,
 				D9CBB85324D1E6C400090837 /* SessionManager.swift in Sources */,
 				D9CBB84D24D1A0E100090837 /* OnboardingViewController.swift in Sources */,
