@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		D91B9A3424DFCB0100FE8BD0 /* SessionsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B9A3324DFCB0100FE8BD0 /* SessionsListTableViewCell.swift */; };
+		D91B9A3924E020C600FE8BD0 /* LeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B9A3824E020C600FE8BD0 /* LeaderViewController.swift */; };
+		D91B9A3C24E022BB00FE8BD0 /* LeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B9A3B24E022BB00FE8BD0 /* LeaderTableViewCell.swift */; };
+		D91B9A3E24E0233D00FE8BD0 /* Leader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B9A3D24E0233D00FE8BD0 /* Leader.swift */; };
+		D91B9A4124E0236E00FE8BD0 /* LeaderStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B9A4024E0236E00FE8BD0 /* LeaderStatistics.swift */; };
+		D91B9A4324E0238B00FE8BD0 /* LeaderboardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B9A4224E0238B00FE8BD0 /* LeaderboardResponse.swift */; };
+		D91B9A4724E02B0500FE8BD0 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B9A4624E02B0500FE8BD0 /* LeaderboardViewController.swift */; };
 		D91C18CB24DF3142009C5167 /* CactusTapBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91C18CA24DF3142009C5167 /* CactusTapBarController.swift */; };
 		D91C18CE24DF34D7009C5167 /* SessionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91C18CD24DF34D7009C5167 /* SessionsListViewController.swift */; };
 		D91C18D024DF3617009C5167 /* SessionsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91C18CF24DF3617009C5167 /* SessionsStorage.swift */; };
@@ -29,6 +35,12 @@
 
 /* Begin PBXFileReference section */
 		D91B9A3324DFCB0100FE8BD0 /* SessionsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsListTableViewCell.swift; sourceTree = "<group>"; };
+		D91B9A3824E020C600FE8BD0 /* LeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderViewController.swift; sourceTree = "<group>"; };
+		D91B9A3B24E022BB00FE8BD0 /* LeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderTableViewCell.swift; sourceTree = "<group>"; };
+		D91B9A3D24E0233D00FE8BD0 /* Leader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leader.swift; sourceTree = "<group>"; };
+		D91B9A4024E0236E00FE8BD0 /* LeaderStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderStatistics.swift; sourceTree = "<group>"; };
+		D91B9A4224E0238B00FE8BD0 /* LeaderboardResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardResponse.swift; sourceTree = "<group>"; };
+		D91B9A4624E02B0500FE8BD0 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
 		D91C18CA24DF3142009C5167 /* CactusTapBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CactusTapBarController.swift; sourceTree = "<group>"; };
 		D91C18CD24DF34D7009C5167 /* SessionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsListViewController.swift; sourceTree = "<group>"; };
 		D91C18CF24DF3617009C5167 /* SessionsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsStorage.swift; sourceTree = "<group>"; };
@@ -75,6 +87,43 @@
 				D91C18CD24DF34D7009C5167 /* SessionsListViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		D91B9A3624DFF8B800FE8BD0 /* Leaderboard */ = {
+			isa = PBXGroup;
+			children = (
+				D91B9A3F24E0234D00FE8BD0 /* Model */,
+				D91B9A3A24E0229100FE8BD0 /* View */,
+				D91B9A3724E0205A00FE8BD0 /* Controller */,
+			);
+			path = Leaderboard;
+			sourceTree = "<group>";
+		};
+		D91B9A3724E0205A00FE8BD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D91B9A3824E020C600FE8BD0 /* LeaderViewController.swift */,
+				D91B9A4624E02B0500FE8BD0 /* LeaderboardViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D91B9A3A24E0229100FE8BD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D91B9A3B24E022BB00FE8BD0 /* LeaderTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D91B9A3F24E0234D00FE8BD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D91B9A3D24E0233D00FE8BD0 /* Leader.swift */,
+				D91B9A4024E0236E00FE8BD0 /* LeaderStatistics.swift */,
+				D91B9A4224E0238B00FE8BD0 /* LeaderboardResponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D91C18C924DF30D3009C5167 /* TapBar */ = {
@@ -148,6 +197,7 @@
 		D9C1B59424D0961600E461E0 /* Cactus */ = {
 			isa = PBXGroup;
 			children = (
+				D91B9A3624DFF8B800FE8BD0 /* Leaderboard */,
 				D91C18CC24DF349E009C5167 /* SessionsList */,
 				D91C18C924DF30D3009C5167 /* TapBar */,
 				D9D6202324DA5688002A8F48 /* CactusShop */,
@@ -279,19 +329,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				D91C18CE24DF34D7009C5167 /* SessionsListViewController.swift in Sources */,
+				D91B9A3924E020C600FE8BD0 /* LeaderViewController.swift in Sources */,
 				D9C1B59A24D0961600E461E0 /* SessionViewController.swift in Sources */,
 				D91C18D024DF3617009C5167 /* SessionsStorage.swift in Sources */,
 				D9C1B59624D0961600E461E0 /* AppDelegate.swift in Sources */,
 				D9CBB85524D1E6E900090837 /* Session.swift in Sources */,
 				D9888A5724D939DB0055C275 /* Break.swift in Sources */,
+				D91B9A4724E02B0500FE8BD0 /* LeaderboardViewController.swift in Sources */,
 				D9CBB85724D1E9EA00090837 /* CountdownTimer.swift in Sources */,
 				D9D6202824DA578E002A8F48 /* CactusesStorage.swift in Sources */,
 				D91B9A3424DFCB0100FE8BD0 /* SessionsListTableViewCell.swift in Sources */,
 				D9888A5924D93A010055C275 /* BreakManager.swift in Sources */,
 				D9D6202624DA56BC002A8F48 /* Cactus.swift in Sources */,
+				D91B9A4324E0238B00FE8BD0 /* LeaderboardResponse.swift in Sources */,
 				D91C18CB24DF3142009C5167 /* CactusTapBarController.swift in Sources */,
 				D9CBB84B24D11C2900090837 /* BreakViewController.swift in Sources */,
+				D91B9A3E24E0233D00FE8BD0 /* Leader.swift in Sources */,
 				D9CBB85324D1E6C400090837 /* SessionManager.swift in Sources */,
+				D91B9A3C24E022BB00FE8BD0 /* LeaderTableViewCell.swift in Sources */,
+				D91B9A4124E0236E00FE8BD0 /* LeaderStatistics.swift in Sources */,
 				D9CBB84D24D1A0E100090837 /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
