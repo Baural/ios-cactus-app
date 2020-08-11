@@ -29,13 +29,11 @@ class LeaderTableViewCell: UITableViewCell {
         nameLabel.text = leader.name
         hoursCountLabel.text = "\(leader.statistics.totalFocusTimeInMinutes / 60) hr."
         
-    
-    //
-    //        if position <= 3 {
-    //            positionLabel.textColor = UIColor(named: "secondaryColor")
-    //        } else {
-    //            positionLabel.textColor = UIColor(named: "grey")
-    //        }
+        if position <= 3 {
+            positionLabel.textColor = UIColor(named: "mainColor")
+        } else {
+            positionLabel.textColor = UIColor(named: "secondTextColor")
+        }
     }
 
 }

@@ -485,9 +485,9 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zOs-jv-2ul">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="w6x-AQ-9ZD">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="leader_cell" id="w6x-AQ-9ZD" customClass="LeaderTableViewCell" customModule="Cactus" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="108.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w6x-AQ-9ZD" id="7VT-aj-koq">
@@ -545,6 +545,12 @@
                                                 <constraint firstItem="Ghc-LV-5fV" firstAttribute="leading" secondItem="7dI-NR-OJu" secondAttribute="trailing" constant="16" id="uFC-1j-KLF"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="hoursCountLabel" destination="RTg-Ii-3mn" id="CNG-T3-Rfr"/>
+                                            <outlet property="nameLabel" destination="Ghc-LV-5fV" id="PXZ-tQ-72Z"/>
+                                            <outlet property="positionLabel" destination="tZk-BV-fdA" id="IAu-VH-ceN"/>
+                                            <outlet property="profileImageView" destination="7dI-NR-OJu" id="cSa-PY-hOW"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -553,7 +559,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="996-Qe-7z9" firstAttribute="trailing" secondItem="zOs-jv-2ul" secondAttribute="trailing" id="Khs-hk-xFM"/>
                             <constraint firstItem="996-Qe-7z9" firstAttribute="bottom" secondItem="zOs-jv-2ul" secondAttribute="bottom" id="KjT-nr-jLi"/>

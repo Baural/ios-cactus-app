@@ -21,15 +21,15 @@ class LeaderViewController: UIViewController {
     @IBOutlet var cactusSessionsContainerView: UIView!
     @IBOutlet var totalFocusTimeContainerView: UIView!
 
-    //    var leader: Leader!
+        var leader: Leader!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        imageView.layer.cornerRadius = imageView.frame.width / 2
-//        imageView.layer.masksToBounds = true
+        imageView.layer.cornerRadius = imageView.frame.width / 2
+        imageView.layer.masksToBounds = true
 
-//            title = leader.name
+            title = leader.name
 
 //        cactusSessionsContainerView.layer.cornerRadius = 16
 //        cactusSessionsContainerView.layer.masksToBounds = true
