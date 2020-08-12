@@ -19,6 +19,10 @@
 		D91C18D024DF3617009C5167 /* SessionsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91C18CF24DF3617009C5167 /* SessionsStorage.swift */; };
 		D9888A5724D939DB0055C275 /* Break.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9888A5624D939DB0055C275 /* Break.swift */; };
 		D9888A5924D93A010055C275 /* BreakManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9888A5824D93A010055C275 /* BreakManager.swift */; };
+		D98EAE2524E2A6100098BCA9 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98EAE2424E2A6100098BCA9 /* LearnViewController.swift */; };
+		D98EAE2824E2B9050098BCA9 /* ArticleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98EAE2724E2B9050098BCA9 /* ArticleCollectionViewCell.swift */; };
+		D98EAE2B24E2BE8E0098BCA9 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98EAE2A24E2BE8E0098BCA9 /* Article.swift */; };
+		D98EAE2D24E2BEDA0098BCA9 /* ArticleStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98EAE2C24E2BEDA0098BCA9 /* ArticleStorage.swift */; };
 		D9C1B59624D0961600E461E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C1B59524D0961600E461E0 /* AppDelegate.swift */; };
 		D9C1B59A24D0961600E461E0 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C1B59924D0961600E461E0 /* SessionViewController.swift */; };
 		D9C1B59D24D0961600E461E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C1B59B24D0961600E461E0 /* Main.storyboard */; };
@@ -46,6 +50,10 @@
 		D91C18CF24DF3617009C5167 /* SessionsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsStorage.swift; sourceTree = "<group>"; };
 		D9888A5624D939DB0055C275 /* Break.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Break.swift; sourceTree = "<group>"; };
 		D9888A5824D93A010055C275 /* BreakManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakManager.swift; sourceTree = "<group>"; };
+		D98EAE2424E2A6100098BCA9 /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
+		D98EAE2724E2B9050098BCA9 /* ArticleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCollectionViewCell.swift; sourceTree = "<group>"; };
+		D98EAE2A24E2BE8E0098BCA9 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		D98EAE2C24E2BEDA0098BCA9 /* ArticleStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleStorage.swift; sourceTree = "<group>"; };
 		D9C1B59224D0961600E461E0 /* Cactus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cactus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9C1B59524D0961600E461E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9C1B59924D0961600E461E0 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +186,41 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		D98EAE2224E2A5C10098BCA9 /* Learn */ = {
+			isa = PBXGroup;
+			children = (
+				D98EAE2924E2BE640098BCA9 /* Model */,
+				D98EAE2624E2B8C90098BCA9 /* View */,
+				D98EAE2324E2A5E70098BCA9 /* Controller */,
+			);
+			path = Learn;
+			sourceTree = "<group>";
+		};
+		D98EAE2324E2A5E70098BCA9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D98EAE2424E2A6100098BCA9 /* LearnViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D98EAE2624E2B8C90098BCA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D98EAE2724E2B9050098BCA9 /* ArticleCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D98EAE2924E2BE640098BCA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D98EAE2A24E2BE8E0098BCA9 /* Article.swift */,
+				D98EAE2C24E2BEDA0098BCA9 /* ArticleStorage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D9C1B58924D0961600E461E0 = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +240,7 @@
 		D9C1B59424D0961600E461E0 /* Cactus */ = {
 			isa = PBXGroup;
 			children = (
+				D98EAE2224E2A5C10098BCA9 /* Learn */,
 				D91B9A3624DFF8B800FE8BD0 /* Leaderboard */,
 				D91C18CC24DF349E009C5167 /* SessionsList */,
 				D91C18C924DF30D3009C5167 /* TapBar */,
@@ -338,14 +382,18 @@
 				D91B9A4724E02B0500FE8BD0 /* LeaderboardViewController.swift in Sources */,
 				D9CBB85724D1E9EA00090837 /* CountdownTimer.swift in Sources */,
 				D9D6202824DA578E002A8F48 /* CactusesStorage.swift in Sources */,
+				D98EAE2824E2B9050098BCA9 /* ArticleCollectionViewCell.swift in Sources */,
 				D91B9A3424DFCB0100FE8BD0 /* SessionsListTableViewCell.swift in Sources */,
+				D98EAE2D24E2BEDA0098BCA9 /* ArticleStorage.swift in Sources */,
 				D9888A5924D93A010055C275 /* BreakManager.swift in Sources */,
 				D9D6202624DA56BC002A8F48 /* Cactus.swift in Sources */,
 				D91B9A4324E0238B00FE8BD0 /* LeaderboardResponse.swift in Sources */,
 				D91C18CB24DF3142009C5167 /* CactusTapBarController.swift in Sources */,
 				D9CBB84B24D11C2900090837 /* BreakViewController.swift in Sources */,
 				D91B9A3E24E0233D00FE8BD0 /* Leader.swift in Sources */,
+				D98EAE2524E2A6100098BCA9 /* LearnViewController.swift in Sources */,
 				D9CBB85324D1E6C400090837 /* SessionManager.swift in Sources */,
+				D98EAE2B24E2BE8E0098BCA9 /* Article.swift in Sources */,
 				D91B9A3C24E022BB00FE8BD0 /* LeaderTableViewCell.swift in Sources */,
 				D91B9A4124E0236E00FE8BD0 /* LeaderStatistics.swift in Sources */,
 				D9CBB84D24D1A0E100090837 /* OnboardingViewController.swift in Sources */,
