@@ -25,11 +25,10 @@ class ArticleCollectionViewCell: UICollectionViewCell {
         thumbnailImageView.layer.masksToBounds = true
     }
     
-//    func configure(with article: Article) {
-//        titleLabel.text = article.title
-//        subtitleLabel.text = article.subtitle
-//        
-//        thumbnailImageView.kf.indicatorType = .activity
-//        thumbnailImageView.kf.setImage(with: URL(string: article.image))
-//    }
+    func configure(with article: Article) {
+        titleLabel.text = article.title
+        subtitleLabel.text = article.subtitle
+        
+
+    }
 }
